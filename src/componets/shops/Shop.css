@@ -1,0 +1,126 @@
+.top-section {
+  background-image: url(https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT78.jpg?v=2.27);
+  height: 30vh;
+  margin-top: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top-section-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+.top-section-icons > span {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 40px;
+  width: 40px;
+  margin: 32px 10px 0 0;
+}
+.middle-section {
+  margin: 40px;
+}
+.name-store > h1 {
+  font-size: 40px;
+}
+.middle-rating {
+  display: flex;
+  flex-direction: row;
+}
+.middle-rating > p {
+  margin: 5px;
+}
+.middle-rating > a {
+  margin: 5px;
+}
+.oder-del {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.goup-odr {
+  display: flex;
+  flex-direction: row;
+}
+.pick-deliver {
+  display: flex;
+  flex-direction: row;
+}
+.main-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 400;
+  width: 25vw;
+}
+.sidebar-menu > span {
+  margin: 12px 12px 12px 0;
+}
+.middle-section-menu {
+  display: flex;
+  flex-direction: column;
+}
+.tooltip {
+  position: relative;
+}
+
+.food-menu-order {
+  display: flex;
+  flex-direction: column;
+}
+.food-menu > h2 {
+  margin: 20px 0 10px 0;
+}
+.menu-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.food-card {
+  position: relative;
+  height: 300px;
+  margin: 10px;
+  max-width: 280px;
+}
+
+.food-card:hover {
+  padding: 10px;
+  margin: 10px;
+  height: 300px;
+  max-width: 240px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px -5px rgba(0, 0, 0, 0.75);
+  transition: transform 20ms ease-in;
+  cursor: pointer;
+}
+.tooltip-text {
+  position: absolute;
+  left: 50%;
+  top: 160px;
+  transform: translate(-50%, 0);
+  font-size: 18px;
+  padding: 10px;
+  background-color: aliceblue;
+  visibility: hidden;
+  border-radius: 40px;
+}
+/* .tooltip-text:hover {
+  visibility: hidden;
+} */
+.add-cir {
+  font-size: 200px;
+  position: absolute;
+  left: 200px;
+  top: 10px;
+}

@@ -1,0 +1,22 @@
+.add-res-signup {
+  display: flex;
+  flex-direction: row;
+  margin: 80px 30px 20px 30px;
+  margin-bottom: 240px;
+}
+
+.add-res > img {
+  padding: 20px;
+  height: 320px;
+  width: 480px;
+}
+.add-feed {
+  margin-left: 20px;
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+.add-res > a {
+  margin-left: 20px;
+  color: black;
+  font-size: 20px;
+}

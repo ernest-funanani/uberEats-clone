@@ -1,0 +1,72 @@
+.login-header {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  height: 80px;
+  background-color: black;
+}
+.login-header > img {
+  height: 80px;
+  width: 260px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  margin-left: 680px;
+  width: 420px;
+}
+.login > h3 {
+  margin-bottom: 14px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.login > input {
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 60px;
+  width: 420px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+.login > input::placeholder {
+  font-size: 18px;
+}
+.continue-btn > button {
+  margin-bottom: 20px;
+  height: 60px;
+  width: 420px;
+  font-size: 20px;
+  color: rgb(255 255 255);
+  background-color: black;
+  border-radius: 10px;
+}
+.line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.first {
+  width: 198px;
+}
+.line > p {
+  padding: 0 10px;
+}
+
+.login > button {
+  margin-bottom: 20px;
+  height: 60px;
+  width: 420px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+footer {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+}

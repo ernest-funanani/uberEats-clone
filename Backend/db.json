@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "test@gmail.com",
+      "password": "test123"
+    },
+    {
+      "email": "damaers@mail.com",
+      "password": "$2a$10$mBKOxho/f48zYBlCIvLSJucixz3tXJXjQZcwUTMe9l/fpE5dLN4Mq",
+      "id": "UJPtbht"
+    },
+    {
+      "email": "funa@gmail.com",
+      "password": "$2a$10$fEBraIwlKt.7GYUqzbqjyu/CqyCuM0xZE6NUVxcajtt4qjfUD4052",
+      "id": "6XP_bma"
+    }
+  ],
+  "bookings": [
+    {
+      "listingId": 1,
+      "startDate": "2022-02-20",
+      "endDate": "2022-02-21",
+      "userId": "1"
+    }
+  ],
+  "resturants": [
+    {
+      "id": "1",
+      "img": "https://pinchofyum.com/cdn-cgi/image/width=680,height=99999,fit=scale-down/wp-content/uploads/Pasta-Salad-with-Italian-Dressing.jpg",
+      "title": "Pasta Work, Clearwater Mall",
+      "distance": "5-25 minutes"
+    },
+    {
+      "id": "2",
+      "img": "https://oceanbasket.co.za/wp-content/uploads/sites/26/nf_image/Desktop-website-header-_1_-7f246puym7g1em5dqhy5638sk.webp",
+      "title": "Ocean Basket, South Gate",
+      "distance": "5 -15min · 0.2km"
+    },
+    {
+      "id": "3",
+      "img": "https://steers.co.za/images/media/promos/2022/november/mo-mjojo/mjojo-heading.webp",
+      "title": "steers South Gate Upper Level",
+      "distance": "5 -15min · 0.3km"
+    },
+    {
+      "id": "4",
+      "img": "https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Items/wrapsta_reg.jpg?v=2.26",
+      "title": "KFC, Meredale",
+      "distance": "5 -15min · 0.2km"
+    },
+    {
+      "id": "5",
+      "img": "https://res.cloudinary.com/spur-group/image/upload/w_600,h_420,c_fill,fl_lossy/spurcorp/E428482C-2A58-4BF7-810C-53AE8D14C01D",
+      "title": "Spur, Falcon Arrow",
+      "distance": "20-30 min · 0,3km "
+    },
+    {
+      "id": "6",
+      "img": "https://romanspizza.co.za/static/media/menu-tag-corner-regular.3bca817e.svg",
+      "title": "Romans Pizza, South Gate",
+      "distance": "5 -15min · 0.3km"
+    }
+  ]
+}

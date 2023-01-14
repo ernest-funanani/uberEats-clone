@@ -1,0 +1,230 @@
+.all-stores {
+  margin-top: 0;
+  padding-right: 20px;
+  margin-left: 30px;
+  height: 100vh;
+
+  overflow-y: scroll;
+}
+.all-stores > h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.all-stores > h3 {
+  margin: 10px 0;
+}
+.sort-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.sort-rating > h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.ranging-price > span {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #eeeeee;
+  border-radius: 40px;
+  height: 18px;
+  max-width: auto;
+}
+.sort-rating > h6 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 420;
+}
+.sort-rating > button {
+  border: none;
+  background-color: #ffffff;
+}
+.sort-rating > p {
+  font-size: larger;
+}
+
+.money-range > input {
+  height: 1px;
+  width: 200px;
+}
+
+.ranges {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.expand-more {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.expand-more > input {
+  height: 18px;
+  width: 18px;
+  margin: 10px;
+}
+
+.expand-more > p {
+  margin-left: 10px;
+}
+
+.sort-expand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.expand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 36px;
+}
+.expand > h5 {
+  font-size: 26px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+.sort-radio {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  margin: 20px 0 20px 20px;
+}
+.radio {
+  height: 24px;
+  width: 24px;
+}
+.sort-radio > p {
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.from-uber {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.uber-eats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.uber-deals {
+  display: flex;
+  justify-content: space-between;
+}
+.uber-icons {
+  height: 20px;
+  width: 20px;
+  margin: 10px 0;
+}
+.ubn-dls {
+  display: flex;
+  align-items: center;
+}
+.ubn-dls > p {
+  margin-left: 10px;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: flex;
+  width: 40px;
+  height: 16px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 20px;
+  left: -2px;
+  bottom: 0px;
+  border: #ccc;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.uber-deals > p {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.dietry {
+  margin: 10px 0;
+}
+.dietry > h3 {
+  font-weight: 400;
+}
+.dietry-types {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+}
+.dietry-type {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 380;
+  padding: 10px;
+  height: 28px;
+  max-width: auto;
+  border-radius: 40px;
+  background-color: #eeeeee;
+  margin: 5px;
+}

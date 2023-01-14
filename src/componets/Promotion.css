@@ -1,0 +1,12 @@
+.container {
+  margin-left: 28px;
+  width: 400px;
+  margin-bottom: 0;
+  overflow-x: hidden;
+}
+.container > img {
+  margin-right: 10px;
+  height: 220px;
+  width: 400px;
+  border-radius: 10px;
+}

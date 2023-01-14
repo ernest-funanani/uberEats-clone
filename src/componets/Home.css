@@ -1,0 +1,119 @@
+.home {
+  background-image: url(https://image-prod.iol.co.za/16x9/800/Uber-Eats-offers-unlimited-free-delivery-as-they-close-down-Picture-Supplied?source=https://xlibris.public.prod.oc.inl.infomaker.io:8443/opencontent/objects/bc090b05-744c-50df-a6af-f7e11ddd6635);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: orange;
+  padding-top: 40px;
+  margin: 40px 60px 0 40px;
+  height: 80px;
+}
+
+.nav-home-img {
+  margin-left: 40px;
+  height: 34px;
+  width: 180px;
+}
+.navbar-account {
+  display: flex;
+  flex-direction: row;
+}
+.nav-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  height: 60px;
+  width: 140px;
+  background-color: white;
+  border-radius: 40px;
+  border: 1px solid #eeeeee;
+}
+.nav-log-text {
+  margin-left: 5px;
+  text-decoration: none;
+}
+.create-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  height: 60px;
+  width: 120px;
+  background-color: black;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+
+.home-input {
+  display: flex;
+  flex-direction: column;
+  color: burlywood;
+  margin-top: 200px;
+}
+.home-input > h1 {
+  margin-left: 60px;
+  font-size: 66px;
+  margin-bottom: 40px;
+}
+.search-input {
+  display: flex;
+  flex-direction: row;
+}
+.input-address {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding-left: 10px;
+  margin-left: 60px;
+  height: 60px;
+  width: 660px;
+  border: 1px solid #eeeeee;
+}
+.input-address > input {
+  margin-left: 10px;
+  font-size: 20px;
+  height: 60px;
+  width: 640px;
+  border: none;
+}
+.del-now {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 20px;
+  font-size: 20px;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #eeeeee;
+}
+.find-food {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-left: 20px;
+  width: 140px;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 5px;
+}
+.home-sign {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 60px;
+  font-size: 16px;
+}
+.home-sign > p {
+  margin-left: 10px;
+}
