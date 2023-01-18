@@ -14,7 +14,8 @@
 .login {
   display: flex;
   flex-direction: column;
-  margin-left: 680px;
+  margin-left: 500px;
+  top: 50;
   width: 420px;
 }
 .login > h3 {

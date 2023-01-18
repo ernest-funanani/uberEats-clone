@@ -1,9 +1,30 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { login } from "../actions/userActions";
 import Capture from "../assets/Capture.PNG";
+import { openModal } from "../actions/modalAction";
 import "./Login.css";
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const dispatch = useDispatch();
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { loading, error, userInfo } = userLogin;
+
+  useEffect(() => {
+    if (userInfo) {
+      dispatch(openModal("closed", ""));
+    }
+  }, [dispatch, userInfo]);
+
+  const submitLogin = (e) => {
+    e.preventDefault();
+    dispatch(login(email, password));
+  };
   return (
     <div>
       <div className="login-header">
@@ -12,9 +33,24 @@ function Login() {
         </Link>
       </div>
 
-      <div className="login">
+      <form className="login" onSubmit={submitLogin}>
         <h3>What's your phone number or email?</h3>
-        <input type="text" placeholder="Enter phone number or email" />
+        {error && <h2>{error}</h2>}
+        {loading && <h2>Loading...</h2>}
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="browser-default"
+          placeholder="Email address"
+        />
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="browser-default"
+          placeholder="Password"
+        />
         <div className="continue-btn">
           <button>Continue</button>
         </div>
@@ -36,7 +72,7 @@ function Login() {
           including by automated means, from Uber and its affiliates to the
           number provided.
         </footer>
-      </div>
+      </form>
     </div>
   );
 }

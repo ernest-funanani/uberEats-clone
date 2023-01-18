@@ -1,10 +1,14 @@
 # GET ALL USERS
 GET http://localhost:5000/users/
 ###
-
 # GET A SINGLE USER
-GET http://localhost:5000/users/6XP_bma
+GET http://localhost:5000/users/2
 ###
+
+# REGISTER A USER
+POST http://localhost:5000/register
+content-type: application/json
+
 
 # REGISTER A USER
 POST http://localhost:5000/register
@@ -28,11 +32,11 @@ content-type: application/json
 ###
 
 # GET ALL BOOKINGS
-http://localhost:5000/bookings/
+http://localhost:5000/products/
 
 ###
 # GET ALL BOOKINGS FOR A USER
-http://localhost:5000/users/1/bookings
+http://localhost:5000/users/1/products
 
 ###
 http://localhost:5000/listings/

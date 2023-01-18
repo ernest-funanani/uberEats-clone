@@ -1,5 +1,5 @@
 .deliv-point {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .deliv-point > h2 {
   margin: 10px 0;
@@ -14,9 +14,10 @@
   margin-bottom: 140px;
   flex-direction: column;
   color: black;
-  margin-right: 20px;
+  text-decoration: none;
+  margin-right: 16px;
   height: 80px;
-  width: 220px;
+  width: 200px;
 }
 .food-types > img {
   height: 120px;

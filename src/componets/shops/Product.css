@@ -1,0 +1,41 @@
+.product-det {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.product-left {
+  margin-left: 180px;
+  width: 50%;
+}
+.prod-left-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.product-left > img {
+  height: 400px;
+  width: 460px;
+}
+.prod-left-top > h4 {
+  margin-left: 10px;
+  font-weight: 400;
+}
+.product-right {
+  display: flex;
+  flex-direction: column;
+  margin-right: 160px;
+}
+
+.flavoured {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 10px 20px;
+  height: 60px;
+  background-color: #f6f6f6;
+}
+.product-right > button {
+  margin-top: 20px;
+  height: 40px;
+
+  background-color: blue;
+}

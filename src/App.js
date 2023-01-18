@@ -8,6 +8,7 @@ import AddAddress from "./componets/AddAddress";
 import Login from "./componets/Login";
 import Lists from "./componets/Lists";
 import Shop from "./componets/shops/Shop";
+import Product from "./componets/shops/Product";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path="/shop">
             <Shop />
+          </Route>
+          <Route path="/product">
+            <Product />
           </Route>
         </Switch>
       </main>

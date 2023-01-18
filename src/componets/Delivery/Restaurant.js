@@ -25,19 +25,41 @@ function Restaurant() {
                 style={{ height: 14, width: 14, color: "green" }}
               />
               <p>᛫</p>
-              <p>R8 Fee</p>
+              <p>R12 Fee</p>
               <p>᛫</p>
-              <p>30-40 min</p>
+              <p>40-50 min</p>
             </div>
           </Link>
           <div className="menu-card">
             <div className="food-types">
               <img
-                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
+                src="https://debonairspizza.co.za/images/food-with-thought/quality-promise-pizzas.webp"
                 alt=""
               />
               <div className="loc-point">
                 <h4>Debonairs pizza, Ormonde </h4>
+                <span>4.4</span>
+              </div>
+
+              <div className="foo-details">
+                <HourglassFullIcon
+                  style={{ height: 14, width: 14, color: "green" }}
+                />
+                <p>᛫</p>
+                <p>R16 Fee</p>
+                <p>᛫</p>
+                <p>40-60 min</p>
+              </div>
+            </div>
+          </div>
+          <div className="menu-card">
+            <div className="food-types">
+              <img
+                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
+                alt=""
+              />
+              <div className="loc-point">
+                <h4>KFC, Ormonde </h4>
                 <span>4.4</span>
               </div>
 
@@ -55,11 +77,33 @@ function Restaurant() {
           <div className="menu-card">
             <div className="food-types">
               <img
-                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
+                src="https://debonairspizza.co.za/images/food-with-thought/debonairs-table.webp"
                 alt=""
               />
               <div className="loc-point">
-                <h4>Debonairs pizza, Ormonde </h4>
+                <h4>Debonairs pizza, Maredale </h4>
+                <span>4.2</span>
+              </div>
+
+              <div className="foo-details">
+                <HourglassFullIcon
+                  style={{ height: 14, width: 14, color: "green" }}
+                />
+                <p>᛫</p>
+                <p>R15 Fee</p>
+                <p>᛫</p>
+                <p>40-20 min</p>
+              </div>
+            </div>
+          </div>
+          <div className="menu-card">
+            <div className="food-types">
+              <img
+                src="https://steers.co.za/images/media/promos/2022/november/wacky-wednesday/ww_burger_new_2.webp"
+                alt=""
+              />
+              <div className="loc-point">
+                <h4>Steers, Ormonde </h4>
                 <span>4.4</span>
               </div>
 
@@ -77,56 +121,12 @@ function Restaurant() {
           <div className="menu-card">
             <div className="food-types">
               <img
-                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
+                src="https://imagesrv.nandos.co.za/374x224//MW_IMAGES/37a76eb0-24b1-4be3-8b62-7e5c09128dfd"
                 alt=""
               />
               <div className="loc-point">
-                <h4>Debonairs pizza, Ormonde </h4>
-                <span>4.4</span>
-              </div>
-
-              <div className="foo-details">
-                <HourglassFullIcon
-                  style={{ height: 14, width: 14, color: "green" }}
-                />
-                <p>᛫</p>
-                <p>R12 Fee</p>
-                <p>᛫</p>
-                <p>30-40 min</p>
-              </div>
-            </div>
-          </div>
-          <div className="menu-card">
-            <div className="food-types">
-              <img
-                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
-                alt=""
-              />
-              <div className="loc-point">
-                <h4>Debonairs pizza, Ormonde </h4>
-                <span>4.4</span>
-              </div>
-
-              <div className="foo-details">
-                <HourglassFullIcon
-                  style={{ height: 14, width: 14, color: "green" }}
-                />
-                <p>᛫</p>
-                <p>R12 Fee</p>
-                <p>᛫</p>
-                <p>30-40 min</p>
-              </div>
-            </div>
-          </div>
-          <div className="menu-card">
-            <div className="food-types">
-              <img
-                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
-                alt=""
-              />
-              <div className="loc-point">
-                <h4>Debonairs pizza, Ormonde </h4>
-                <span>4.4</span>
+                <h4>Nandos , Ormonde </h4>
+                <span>4.6</span>
               </div>
 
               <div className="foo-details">
@@ -143,7 +143,7 @@ function Restaurant() {
         </div>
       </div>
       <div className="deliv-point">
-        <h2>Popular Nearby you</h2>
+        <h2>Family favourites</h2>
         <div className="rest-select">
           <div className="menu-card">
             <div className="food-types">
@@ -170,12 +170,12 @@ function Restaurant() {
           <div className="menu-card">
             <div className="food-types">
               <img
-                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
+                src="https://imagesrv.nandos.co.za/374x210//MW_IMAGES/5742ef7a-3d17-4937-a3cc-34e410ce3e9c"
                 alt=""
               />
               <div className="loc-point">
-                <h4>Debonairs pizza, Ormonde </h4>
-                <span>4.4</span>
+                <h4>Nandos, Ormonde </h4>
+                <span>4.3</span>
               </div>
 
               <div className="foo-details">
@@ -233,7 +233,6 @@ function Restaurant() {
               </div>
             </div>
           </div>
-          <div className="menu-card"></div>
           <div className="menu-card">
             <div className="food-types">
               <img
@@ -241,8 +240,8 @@ function Restaurant() {
                 alt=""
               />
               <div className="loc-point">
-                <h4>Debonairs pizza, Ormonde </h4>
-                <span>4.4</span>
+                <h4>KFC, Maredale</h4>
+                <span>4.2</span>
               </div>
 
               <div className="foo-details">
@@ -259,16 +258,16 @@ function Restaurant() {
         </div>
       </div>
       <div className="deliv-point">
-        <h2>Popular Nearby you</h2>
+        <h2>Healthy eating</h2>
         <div className="rest-select">
           <div className="menu-card">
             <div className="food-types">
               <img
-                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
+                src="https://fishaways.co.za/_next/image?url=%2Fimages%2Fbetter_choice_hake_salad.png&w=640&q=75"
                 alt=""
               />
               <div className="loc-point">
-                <h4>Debonairs pizza, Ormonde </h4>
+                <h4>Fishway, Ormonde </h4>
                 <span>4.4</span>
               </div>
 
@@ -286,77 +285,11 @@ function Restaurant() {
           <div className="menu-card">
             <div className="food-types">
               <img
-                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHayUmYYHBerurXfzPG_3FQgXSmsF3rWgu-XNVJtbang&s"
                 alt=""
               />
               <div className="loc-point">
-                <h4>Debonairs pizza, Ormonde </h4>
-                <span>4.4</span>
-              </div>
-
-              <div className="foo-details">
-                <HourglassFullIcon
-                  style={{ height: 14, width: 14, color: "green" }}
-                />
-                <p>᛫</p>
-                <p>R12 Fee</p>
-                <p>᛫</p>
-                <p>30-40 min</p>
-              </div>
-            </div>
-          </div>
-          <div className="menu-card">
-            <div className="food-types">
-              <img
-                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
-                alt=""
-              />
-              <div className="loc-point">
-                <h4>Debonairs pizza, Ormonde </h4>
-                <span>4.4</span>
-              </div>
-
-              <div className="foo-details">
-                <HourglassFullIcon
-                  style={{ height: 14, width: 14, color: "green" }}
-                />
-                <p>᛫</p>
-                <p>R12 Fee</p>
-                <p>᛫</p>
-                <p>30-40 min</p>
-              </div>
-            </div>
-          </div>
-          <div className="menu-card">
-            <div className="food-types">
-              <img
-                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
-                alt=""
-              />
-              <div className="loc-point">
-                <h4>Debonairs pizza, Ormonde </h4>
-                <span>4.4</span>
-              </div>
-
-              <div className="foo-details">
-                <HourglassFullIcon
-                  style={{ height: 14, width: 14, color: "green" }}
-                />
-                <p>᛫</p>
-                <p>R12 Fee</p>
-                <p>᛫</p>
-                <p>30-40 min</p>
-              </div>
-            </div>
-          </div>
-          <div className="menu-card">
-            <div className="food-types">
-              <img
-                src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Category/CAT103.jpg?v=2.29"
-                alt=""
-              />
-              <div className="loc-point">
-                <h4>Debonairs pizza, Ormonde </h4>
+                <h4>fishaways, Diepkloof</h4>
                 <span>4.4</span>
               </div>
 

@@ -136,15 +136,15 @@ function Sort() {
           </div>
           <div className="dietry-type">
             <BakeryDiningIcon style={{ height: "14" }} />
-            <p>Hilaal</p>
+            <p>Glueten free</p>
           </div>
           <div className="dietry-type">
             <MosqueIcon style={{ height: "14" }} />
             <p>Hilaal</p>
           </div>
           <div className="dietry-type">
-            <KitchenIcon />
-            <p>Hilaal</p>
+            <KitchenIcon style={{ height: "14" }} />
+            <p>Allergy friendly</p>
           </div>
         </div>
       </div>

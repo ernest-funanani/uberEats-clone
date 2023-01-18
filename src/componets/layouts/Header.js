@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Lists from "../Lists";
 import Pickup from "../Pickup";
 import "./Header.css";
+import ShoppingContext from "../context/shopping/shoppingContext";
+import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 
 function Header() {
-  // const [isDelivery, setIsDelivery] = useState(false);
+  const shoppingContext = useContext(ShoppingContext);
+  const { cart } = shoppingContext;
 
-  // const handleDelivery = () => {
-  //   setIsDelivery(true);
-  // };
   return (
     <div className="hello">
       <div className="left-menu">
@@ -67,7 +67,8 @@ function Header() {
       </div>
       <div className="right-menu">
         <div className="cart">
-          <span class="material-symbols-outlined">shopping_cart</span>
+          <ShoppingBasketIcon />
+          <p>{cart?.length}</p>
           <p>Cart</p>
         </div>
       </div>

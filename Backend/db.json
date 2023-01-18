@@ -16,12 +16,19 @@
       "id": "6XP_bma"
     }
   ],
-  "bookings": [
+  "products": [
     {
-      "listingId": 1,
-      "startDate": "2022-02-20",
-      "endDate": "2022-02-21",
-      "userId": "1"
+      "id": "1",
+      "image": "https://pinchofyum.com/cdn-cgi/image/width=680,height=99999,fit=scale-down/wp-content/uploads/Pasta-Salad-with-Italian-Dressing.jpg",
+      "title": "Pasta Work, Clearwater Mall",
+      "detals": ""
+    },
+    {
+      "id": "2",
+      "title": "All Star Box with Buddy Bottle",
+      "image": "https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Items/wrapsta_reg.jpg?v=2.29",
+      "details": " Crunch Burger, 1 piece of Original Recipe chicken, 2 Zinger Wings, small chips, 440 ml buddy bottle.",
+      "price": "59.99"
     }
   ],
   "resturants": [
