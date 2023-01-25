@@ -1,59 +1,65 @@
-import { React, useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { login } from "../actions/userActions";
+import React, { useState } from "react";
 import Capture from "../assets/Capture.PNG";
-import { openModal } from "../actions/modalAction";
+import { Link, useHistory } from "react-router-dom";
 import "./Login.css";
+import { auth } from "./Firebase";
 
-function Login() {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const history = useHistory();
 
-  const dispatch = useDispatch();
-
-  const userLogin = useSelector((state) => state.userLogin);
-  const { loading, error, userInfo } = userLogin;
-
-  useEffect(() => {
-    if (userInfo) {
-      dispatch(openModal("closed", ""));
-    }
-  }, [dispatch, userInfo]);
-
-  const submitLogin = (e) => {
+  const signIn = (e) => {
     e.preventDefault();
-    dispatch(login(email, password));
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        history.push("/");
+      })
+      .catch((error) => alert(error.message));
   };
+
+  const register = (e) => {
+    e.preventDefault();
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        if (auth) {
+          history.push("/");
+        }
+      })
+      .catch((error) => alert(error.message));
+  };
+
   return (
-    <div>
+    <>
       <div className="login-header">
         <Link to="/home">
           <img className="login-img" src={Capture} alt="" />
         </Link>
       </div>
 
-      <form className="login" onSubmit={submitLogin}>
+      <form className="login">
         <h3>What's your phone number or email?</h3>
-        {error && <h2>{error}</h2>}
-        {loading && <h2>Loading...</h2>}
+
         <input
-          type="email"
+          type="text"
+          className="browser-default"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="browser-default"
-          placeholder="Email address"
         />
         <input
           type="password"
+          className="browser-default"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="browser-default"
-          placeholder="Password"
         />
         <div className="continue-btn">
-          <button>Continue</button>
+          <button onClick={signIn}>Continue</button>
         </div>
+        <button className="login_registerButton" onClick={register}>
+          Create your Uber Eats Account
+        </button>
 
         <div className="line">
           <div className="first">
@@ -73,8 +79,8 @@ function Login() {
           number provided.
         </footer>
       </form>
-    </div>
+    </>
   );
-}
+};
 
 export default Login;

@@ -9,6 +9,8 @@ import Login from "./componets/Login";
 import Lists from "./componets/Lists";
 import Shop from "./componets/shops/Shop";
 import Product from "./componets/shops/Product";
+import Modal from "./componets/Modal";
+// import { auth } from "../src/Firebase";
 
 function App() {
   return (
@@ -38,6 +40,9 @@ function App() {
           </Route>
           <Route path="/product">
             <Product />
+          </Route>
+          <Route path="/modal">
+            <Modal />
           </Route>
         </Switch>
       </main>

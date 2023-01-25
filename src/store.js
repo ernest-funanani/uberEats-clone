@@ -2,11 +2,11 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 import { resturantListReducer } from "../src/reducers/restaurantReducer";
-import { userLoginReducer } from "../src/reducers/userReducer";
+import { productListReducer } from "../src/reducers/productReducer";
 
 const reducer = combineReducers({
   resturantList: resturantListReducer,
-  userLogin: userLoginReducer,
+  productList: productListReducer,
 });
 
 const userInfoFromLS = localStorage.getItem("userInfo")

@@ -1,15 +1,30 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Header from "../layouts/Header";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import "./Product.css";
+import Products from "./Products";
 import ShoppingContext from "../context/shopping/shoppingContext";
+import { listProduct } from "../../actions/productsAction";
 
-const Product = (id, image, title, details, price) => {
+const Product = (id, img, title, details, price) => {
+  //adding product details
+
+  const dispatch = useDispatch();
+
+  const productList = useSelector((state) => state.productList);
+  const { loading, error, products } = productList;
+
+  useEffect(() => {
+    dispatch(listProduct());
+  }, [dispatch]);
+  //addng product to cart
   const shoppingContext = useContext(ShoppingContext);
   const { addToCart } = shoppingContext;
   const addToCartHandler = () => {
-    addToCart({ item: { id, image, title, details, price } });
+    addToCart({ item: { id, img, title, details, price } });
   };
+
   return (
     <div>
       <Header />
@@ -19,15 +34,33 @@ const Product = (id, image, title, details, price) => {
             <ArrowBackIcon />
             <h4>Back to KFC, Maredale</h4>
           </div>
-          <img src={image} />
+          <div>
+            {loading ? (
+              <h2>loading</h2>
+            ) : error ? (
+              <h3>{error}:</h3>
+            ) : (
+              <div>
+                {products.map((product) => (
+                  <Products className="food-img-det" src={product.img} />
+                ))}
+              </div>
+            )}
+          </div>
         </div>
         <div className="product-right">
-          <h1>{title}</h1>
+          {products.map((product) => (
+            <Products title={product.title} />
+          ))}
           <p className="product_price">
             <small>R</small>
-            <strong>{price}</strong>
+            {products.map((product) => (
+              <Products title={product.price} />
+            ))}
           </p>
-          <p>{details}</p>
+          {products.map((product) => (
+            <Products title={product.details} />
+          ))}
           <div className="flavoured">
             <h4>Drink Flavour</h4>
             <p>Required</p>

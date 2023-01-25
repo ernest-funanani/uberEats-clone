@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../layouts/Header";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
@@ -150,15 +151,17 @@ const Shop = () => {
               <div className="food-menu">
                 <h2>Box Meals</h2>
                 <div className="menu-card">
-                  <div className="food-card">
-                    <img
-                      src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Items/flb_zinger_sfl.jpg?v=2.28"
-                      alt=""
-                    />
-                    <span>Crunchmaster Peri Peri (Prego)</span>
-                    <span> Box Meal</span>
-                    <p>R 105.90</p>
-                  </div>
+                  <Link to="/product" className="food-card">
+                    <div>
+                      <img
+                        src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Items/flb_zinger_sfl.jpg?v=2.28"
+                        alt=""
+                      />
+                      <span>Crunchmaster Peri Peri (Prego)</span>
+                      <span> Box Meal</span>
+                      <p>R 105.90</p>
+                    </div>
+                  </Link>
                   <div className="food-card">
                     <img
                       src="https://order.kfc.co.za/Content/OnlineOrderingImages/Menu/Items/flb_colburg_sfl.jpg?v=2.28"

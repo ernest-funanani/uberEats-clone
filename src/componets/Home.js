@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useContext } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../componets/layouts/Footer";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -8,8 +8,18 @@ import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "./Home.css";
 import AddAddress from "./AddAddress";
+import ShoppingContext from "./context/shopping/shoppingContext";
+import { auth } from "./Firebase";
 
 function Home() {
+  const shoppingContext = useContext(ShoppingContext);
+  const { user } = shoppingContext;
+
+  const handleAuthentication = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
   return (
     <div className="main-body">
       <div className="home">
@@ -27,9 +37,13 @@ function Home() {
           <div className="navbar-account">
             <div className="nav-login">
               <PersonIcon sx={{ fontSize: 30 }} />
-              <Link to="/login">
+              <Link to={!user && "/login"}>
                 <h4 className="nav-log-text">Log in</h4>
               </Link>
+            </div>
+            <div className="auth-handle" onClick={handleAuthentication}>
+              <h4>{!user ? "Guest" : user.email}</h4>
+              <h4>{user ? "sign out" : "Sign In"}</h4>
             </div>
             <div className="create-account">
               <h4> Sign up</h4>
@@ -54,7 +68,7 @@ function Home() {
           </div>
 
           <div className="home-sign">
-            <a href="https://www.ubereats.com/login-redirect/?campaign=signin_universal_link&marketing_vistor_id=bd9a88b6-af8f-4530-a1d2-8dbe307e8998&redirect=%2Fza&guest_mode=false">
+            <a href="https://www.ubereats.com/login-redirect/?campaign=signin_universal_link&marketing_vistor_id=d9a88b6-af8f-4530-a1d2-8dbe307e8998&redirect=%2Fza&guest_mode=false">
               Sign in
             </a>
             <p> with your recent addres</p>

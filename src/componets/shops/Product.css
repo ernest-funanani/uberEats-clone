@@ -12,9 +12,10 @@
   flex-direction: row;
   align-items: center;
 }
-.product-left > img {
-  height: 400px;
-  width: 460px;
+.food-img-det {
+  height: 200px;
+  width: 400px;
+  background-color: aqua;
 }
 .prod-left-top > h4 {
   margin-left: 10px;
